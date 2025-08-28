@@ -1,0 +1,96 @@
+{
+  "profile": {
+    "realname": "KIM SUNG RYOUNG",
+    "name": "서래",
+    "englishname": "Seorae",
+    "dateOfBirth": "2001-11-27",
+    "heightCm": 173,
+    "weightKg": 53,
+    "education": "서울예대 연기과 졸업",
+    "specialties": ["마임", "인형움직임"],
+    "affiliations": ["한국마임협의회 회원"],
+    "introduction": "어떤 색이든 담아낼 수 있는 도화지 같은 배우입니다. 저는 타인을 관찰하고 제 자신을 들여다보며 연기를 만듭니다. 생각할 수 없는 죽음을 생각하면서도 허무주의에 머무르지 않으며 의미를 탐구하는 배우가 되고싶습니다."
+  },
+  "contact": {
+    "phone": "010-2774-2111",
+    "email": "jklasd7881@naver.com",
+    "instagramHandle": "@s2orae",
+    "youtubeHandle": "s2orae"
+  },
+  "media": {
+    "screen": [
+      {
+        "type": "상업드라마",
+        "title": "킬힐",
+        "broadcaster": "tvN",
+        "role": "가온 MD",
+        "year": null
+      },
+      {
+        "type": "단편",
+        "title": "고난한 그녀들",
+        "producer": "한예종",
+        "role": "주연",
+        "year": null
+      },
+      {
+        "type": "단편",
+        "title": "wait wait wait",
+        "role": "주연",
+        "year": null
+      },
+      { "type": "독립장편", "title": "유인미", "role": "단역", "year": null },
+      { "type": "단편", "title": "풍선", "role": "주연", "year": null }
+    ],
+    "modelMv": [
+      { "type": "학교홍보", "title": "서울예술대학교 홍보영상", "year": null },
+      { "type": "MV", "title": "장마사지를 해줄게", "year": null, "url": null },
+      { "type": "MV", "title": "표량", "year": null, "url": null }
+    ],
+    "theater": [
+      {
+        "year": 2025,
+        "title": "악몽의역사",
+        "note": "이탈리아 스폴레토 페스티벌 초청공연"
+      },
+      { "year": 2025, "title": "환상가족" },
+      { "year": 2025, "title": "자연과 관계맺기" },
+      {
+        "year": 2023,
+        "title": "거북이와토끼",
+        "award": "춘천인형극경연대회 최우수상 선정"
+      },
+      {
+        "year": 2023,
+        "title": "어린왕자",
+        "note": "춘천인형극제 초청작 / 어린왕자 역"
+      },
+      { "year": 2023, "title": "마벤져스4 <두리번>", "type": "마임극" },
+      { "year": 2022, "title": "코마의 마리오네트" },
+      { "year": 2022, "title": "헤적들", "note": "예술 대학로 축제 / 연출" },
+      { "year": 2022, "title": "숨바꼭질 시어터" },
+      { "year": 2022, "title": "마벤져스3 <이별>", "type": "마임극" },
+      { "year": 2022, "title": "a few deep breathes" },
+      { "year": 2022, "title": "롤러코스터:속도의 가중", "award": "대상" }
+    ]
+  },
+  "assets": {
+    "images": [
+      { "label": "profile", "src": "/images/seorae/profile.jpg" },
+      { "label": "stage1", "src": "/images/seorae/profile2.jpg" },
+      { "label": "stage2", "src": "/images/seorae/profile2.jpg" },
+      { "label": "stage3", "src": "/images/seorae/profile2.jpg" }
+    ],
+    "youtube": [
+      {
+        "label": "포트폴리오 하이라이트",
+        "url": "https://youtu.be/6qqlRHdmHpA?si=mZehQO_qaD-uz2kF"
+      },
+      {
+        "label": "무용/마임 퍼포먼스",
+        "url": "https://youtu.be/Asd6BUUG4B4?si=lJ6JDBrp7B3pZqt8"
+      }
+    ]
+  },
+  "updatedAt": "2025-08-28T12:00:00Z"
+}
