@@ -12,11 +12,12 @@ export default function ImageCarousel({
 
   if (!items?.length) return null;
 
-  const paginate = (newDirection: number) => {
-    let next = page + newDirection;
-    if (next < 0) next = items.length - 1;
-    if (next >= items.length) next = 0;
-    setPage(next);
+  const nextSlide = () => {
+    setPage((prev) => (prev + 1) % items.length);
+  };
+
+  const prevSlide = () => {
+    setPage((prev) => (prev - 1 + items.length) % items.length);
   };
 
   return (
@@ -35,18 +36,20 @@ export default function ImageCarousel({
           ))}
         </SlideWrapper>
       </SlideWindow>
-
-      <ButtonLeft onClick={() => paginate(-1)}>‹</ButtonLeft>
-      <ButtonRight onClick={() => paginate(1)}>›</ButtonRight>
+      <Controls>
+        <Button onClick={prevSlide}>‹</Button>
+        <Indicator>
+          {page + 1}/{items.length}
+        </Indicator>
+        <Button onClick={nextSlide}>›</Button>
+      </Controls>
     </Wrapper>
   );
 }
 
-/* ─ constants ─ */
-const SLIDE_WIDTH = 100; // 슬라이드 하나의 너비 (%)
-const GAP = 4; // 슬라이드 간 간격 (%)
+const SLIDE_WIDTH = 100;
+const GAP = 4;
 
-/* ─ styled-components ─ */
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
@@ -56,8 +59,7 @@ const Wrapper = styled.div`
 `;
 
 const SlideWindow = styled.div`
-  overflow: visible;
-  padding: 0 5%;
+  overflow: hidden;
 `;
 
 const SlideWrapper = styled(motion.div)`
@@ -71,13 +73,12 @@ const Slide = styled.div`
   height: 420px;
   position: relative;
   box-sizing: border-box;
-  transition: transform 0.3s ease;
 `;
 
 const Img = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: contain; /* ✅ 비율 유지 + 이미지 전체 표시 */
+  object-fit: contain;
   object-position: center;
   border-radius: 12px;
 `;
@@ -93,24 +94,30 @@ const Caption = styled.div`
   border-radius: 0 0 12px 12px;
 `;
 
+const Controls = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0;
+  gap: 8px;
+`;
+
 const Button = styled.button`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 32px;
-  background: transparent;
-  color: black;
+  color: #16bf00;
   border: none;
-  cursor: pointer;
+  font-size: 1.2rem;
   padding: 4px 10px;
-  border-radius: 50%;
-  z-index: 10;
+  cursor: pointer;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
-const ButtonLeft = styled(Button)`
-  left: 12px;
-`;
-
-const ButtonRight = styled(Button)`
-  right: 12px;
+const Indicator = styled.div`
+  font-size: 0.825rem;
+  color: #646464;
+  line-height: 1;
+  min-width: 30px;
+  text-align: center;
 `;

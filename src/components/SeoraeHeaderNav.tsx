@@ -19,7 +19,6 @@ export default function SeoraeHeaderNav() {
 
   return (
     <Nav>
-      {/* 왼쪽: 로고 + (데스크탑 전용) 섹션 버튼 */}
       <Left>
         <Logo>Seorae</Logo>
         <DesktopMenu>
@@ -30,13 +29,9 @@ export default function SeoraeHeaderNav() {
           ))}
         </DesktopMenu>
       </Left>
-
-      {/* 오른쪽: 햄버거 */}
       <Right>
         <Hamburger onClick={() => setOpen(!open)}>☰</Hamburger>
       </Right>
-
-      {/* 사이드 네비 */}
       {open && (
         <>
           <Overlay onClick={() => setOpen(false)} />
@@ -54,16 +49,17 @@ export default function SeoraeHeaderNav() {
   );
 }
 
-/* ───────── 스타일 ───────── */
 const Nav = styled.nav`
-  width: 90%;
+  width: 100%;
+  max-width: 100vw;
   display: flex;
   align-items: center;
-  margin: 0 auto; /* Safari에서 확실히 가운데 정렬 */
   justify-content: space-between;
   padding: 16px;
+  margin: 0 auto;
   position: relative;
   z-index: 100;
+  -webkit-tap-highlight-color: transparent;
 `;
 
 const Left = styled.div`
@@ -75,6 +71,7 @@ const Left = styled.div`
 const Logo = styled(GreenText).attrs({ size: "xl" })`
   color: #16bf00;
   font-weight: 600;
+  user-select: none;
 `;
 
 const DesktopMenu = styled.div`
@@ -92,15 +89,16 @@ const Right = styled.div`
 `;
 
 const NavButton = styled.button`
-  background-color: transparent;
+  background: transparent;
   padding: 4px 8px;
   font-size: 0.9rem;
   border: none;
   cursor: pointer;
   font-weight: 500;
-  color: black;
+  color: #111;
+  -webkit-tap-highlight-color: transparent;
   &:hover {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.05);
   }
 `;
 
@@ -109,8 +107,8 @@ const Hamburger = styled.button`
   border: none;
   font-size: 1.8rem;
   cursor: pointer;
-  flex-shrink: 0;
-  color: black;
+  color: #111;
+  -webkit-tap-highlight-color: transparent;
   @media (min-width: 769px) {
     display: none;
   }
@@ -122,13 +120,15 @@ const SideNav = styled.div`
   right: 0;
   width: 220px;
   height: 100%;
-  background: white;
+  background: #fff;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
   z-index: 200;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 `;
 
 const Overlay = styled.div`
@@ -139,6 +139,7 @@ const Overlay = styled.div`
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   z-index: 150;
+  touch-action: none;
 `;
 
 const SideNavButton = styled.button`
@@ -149,6 +150,7 @@ const SideNavButton = styled.button`
   padding: 8px;
   cursor: pointer;
   color: #111;
+  -webkit-tap-highlight-color: transparent;
   &:hover {
     background: #f3f4f6;
   }
@@ -162,4 +164,5 @@ const CloseButton = styled.button`
   cursor: pointer;
   margin-top: auto;
   color: #111;
+  -webkit-tap-highlight-color: transparent;
 `;

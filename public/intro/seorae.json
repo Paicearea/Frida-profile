@@ -20,75 +20,155 @@
   "media": {
     "screen": [
       {
-        "type": "상업드라마",
-        "title": "킬힐",
+        "type": "[상업]드라마",
+        "title": "<킬힐>",
         "broadcaster": "tvN",
-        "role": "가온 MD",
+        "role": "가온 MD역",
         "year": null
       },
       {
-        "type": "단편",
-        "title": "고난한 그녀들",
+        "type": "[단편]",
+        "title": "<고난한 그녀들>",
         "producer": "한예종",
         "role": "주연",
         "year": null
       },
       {
-        "type": "단편",
-        "title": "wait wait wait",
+        "type": "[단편]",
+        "title": "<wait wait wait>",
         "role": "주연",
         "year": null
       },
-      { "type": "독립장편", "title": "유인미", "role": "단역", "year": null },
-      { "type": "단편", "title": "풍선", "role": "주연", "year": null }
+      {
+        "type": "[독립장편]",
+        "title": "<유인미>",
+        "role": "단역",
+        "year": null
+      },
+      {
+        "type": "[단편]",
+        "title": "<풍선>",
+        "role": "주연",
+        "year": null
+      }
     ],
     "modelMv": [
-      { "type": "학교홍보", "title": "서울예술대학교 홍보영상", "year": null },
-      { "type": "MV", "title": "장마사지를 해줄게", "year": null, "url": null },
-      { "type": "MV", "title": "표량", "year": null, "url": null }
+      {
+        "type": "학교홍보",
+        "title": "서울예술대학교 홍보영상",
+        "year": null
+      },
+      {
+        "type": "MV",
+        "title": "장마사지를 해줄게",
+        "year": null,
+        "url": null
+      },
+      {
+        "type": "MV",
+        "title": "표량",
+        "year": null,
+        "url": null
+      }
     ],
     "theater": [
       {
         "year": 2025,
-        "title": "악몽의역사",
-        "note": "이탈리아 스폴레토 페스티벌 초청공연"
+        "title": "<악몽의역사>",
+        "note": "이탈리아 스폴레토 페스티벌 초청공연",
+        "highlight": true
       },
-      { "year": 2025, "title": "환상가족" },
-      { "year": 2025, "title": "자연과 관계맺기" },
+      {
+        "year": 2025,
+        "title": "<환상가족>"
+      },
+      {
+        "year": 2025,
+        "title": "<자연과 관계맺기>"
+      },
       {
         "year": 2023,
-        "title": "거북이와토끼",
+        "title": "<거북이와토끼>",
         "award": "춘천인형극경연대회 최우수상 선정"
       },
       {
         "year": 2023,
-        "title": "어린왕자",
+        "title": "<어린왕자>",
         "note": "춘천인형극제 초청작 / 어린왕자 역"
       },
-      { "year": 2023, "title": "마벤져스4 <두리번>", "type": "마임극" },
-      { "year": 2022, "title": "코마의 마리오네트" },
-      { "year": 2022, "title": "헤적들", "note": "예술 대학로 축제 / 연출" },
-      { "year": 2022, "title": "숨바꼭질 시어터" },
-      { "year": 2022, "title": "마벤져스3 <이별>", "type": "마임극" },
-      { "year": 2022, "title": "a few deep breathes" },
-      { "year": 2022, "title": "롤러코스터:속도의 가중", "award": "대상" }
+      {
+        "year": 2023,
+        "title": "<두리번>",
+        "type": "마임극",
+        "note": "마벤져스4"
+      },
+      {
+        "year": 2022,
+        "title": "<코마의 마리오네트>"
+      },
+      {
+        "year": 2022,
+        "title": "<헤적들>",
+        "note": "예술 대학로 축제 / 연출"
+      },
+      {
+        "year": 2022,
+        "title": "<숨바꼭질 시어터>"
+      },
+      {
+        "year": 2022,
+        "title": "<이별>",
+        "type": "마임극",
+        "note": "마벤져스3"
+      },
+      {
+        "year": 2022,
+        "title": "<a few deep breathes>"
+      },
+      {
+        "year": 2022,
+        "title": "<롤러코스터:속도의 가중>",
+        "award": "대상",
+        "highlight": true
+      }
     ]
   },
+
   "assets": {
     "images": [
-      { "label": "profile", "src": "/images/seorae/profile.jpg" },
-      { "label": "stage1", "src": "/images/seorae/profile2.jpg" },
-      { "label": "stage2", "src": "/images/seorae/profile2.jpg" },
-      { "label": "stage3", "src": "/images/seorae/profile2.jpg" }
+      { "label": "seorae1", "src": "/images/seorae/carousel1.png" },
+      { "label": "seorae2", "src": "/images/seorae/carousel2.png" },
+      { "label": "seorae3", "src": "/images/seorae/carousel3.png" },
+      { "label": "seorae4", "src": "/images/seorae/carousel4.png" },
+      { "label": "seorae5", "src": "/images/seorae/carousel5.png" },
+      { "label": "seorae6", "src": "/images/seorae/carousel6.png" },
+      { "label": "seorae7", "src": "/images/seorae/carousel7.png" },
+      { "label": "seorae8", "src": "/images/seorae/carousel8.png" },
+      { "label": "seorae9", "src": "/images/seorae/carousel9.png" },
+      { "label": "seorae10", "src": "/images/seorae/carousel10.png" },
+      { "label": "seorae11", "src": "/images/seorae/carousel11.png" },
+      { "label": "seorae12", "src": "/images/seorae/carousel12.png" },
+      { "label": "seorae13", "src": "/images/seorae/carousel13.png" },
+      { "label": "seorae14", "src": "/images/seorae/carousel14.png" },
+      { "label": "seorae15", "src": "/images/seorae/carousel15.png" },
+      { "label": "seorae16", "src": "/images/seorae/carousel16.png" },
+      { "label": "seorae17", "src": "/images/seorae/carousel17.png" },
+      { "label": "seorae18", "src": "/images/seorae/carousel18.png" }
     ],
     "youtube": [
       {
-        "label": "포트폴리오 하이라이트",
+        "label": "어른들은 몰라요_독백_서래",
         "url": "https://youtu.be/6qqlRHdmHpA?si=mZehQO_qaD-uz2kF"
       },
       {
-        "label": "무용/마임 퍼포먼스",
+        "label": "서래 cut",
         "url": "https://youtu.be/Asd6BUUG4B4?si=lJ6JDBrp7B3pZqt8"
+      }
+    ],
+    "video": [
+      {
+        "label": "Seorae Promo",
+        "src": "/video/Seorae.mp4"
       }
     ]
   },

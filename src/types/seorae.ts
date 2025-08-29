@@ -1,5 +1,6 @@
 export type YoutubeItem = { label?: string; url: string };
 export type ImageItem = { label?: string; src: string };
+export type VideoItem = { label?: string; src: string };
 
 export type SeoraeJson = {
   profile: {
@@ -41,11 +42,13 @@ export type SeoraeJson = {
       type?: string;
       award?: string;
       note?: string;
+      highlight?: boolean;
     }>;
   };
   assets?: {
     images?: ImageItem[];
     youtube?: YoutubeItem[];
+    video?: VideoItem[];
   };
   updatedAt?: string;
 };

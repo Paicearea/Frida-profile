@@ -12,7 +12,9 @@ export default function SeoraeYoutubeSection({
 
   return (
     <Section id="youtube">
-      <GreenText size="xl">YouTube</GreenText>
+      <Header>
+        <GreenTitle size="xl">YouTube</GreenTitle>
+      </Header>
       <YouTubeGrid items={youtube} />
     </Section>
   );
@@ -20,9 +22,18 @@ export default function SeoraeYoutubeSection({
 
 const Section = styled.section`
   width: 90%;
-  max-width: 800px;
+  max-width: 1000px;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
-    padding: 0 32px;
+    padding: 0 24px;
   }
+`;
+
+const Header = styled.div`
+  margin-bottom: 12px;
+`;
+
+const GreenTitle = styled(GreenText)`
+  display: block;
 `;

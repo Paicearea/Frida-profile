@@ -21,7 +21,7 @@ function extractVideoId(url: string): string | null {
         return u.pathname.split("/")[2] || null;
     }
   } catch {
-    /* empty */
+    return null;
   }
   return null;
 }
@@ -131,6 +131,7 @@ const NoThumb = styled.div`
   display: grid;
   place-items: center;
   color: #9ca3af;
+  font-size: 14px;
 `;
 
 const Overlay = styled.div`

@@ -35,7 +35,6 @@ function SeoraeProfileSection({ profile, contact }: SeoraeProfileSectionProps) {
       {introduction && <IntroText>{introduction}</IntroText>}
 
       <TwoColumn>
-        {/* Profile */}
         <Column>
           <GroupTitle>Profile</GroupTitle>
           <InfoGrid as="dl">
@@ -84,7 +83,6 @@ function SeoraeProfileSection({ profile, contact }: SeoraeProfileSectionProps) {
           </InfoGrid>
         </Column>
 
-        {/* Contact */}
         <Column>
           {(phone || email || instagramHandle || youtubeHandle) && (
             <>
@@ -151,16 +149,10 @@ function SeoraeProfileSection({ profile, contact }: SeoraeProfileSectionProps) {
 
 export default SeoraeProfileSection;
 
-/* ─ styled-components ─ */
-
 const Section = styled.section`
   width: 90%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
-  min-width: 0;
-  @media (max-width: 768px) {
-    padding: 0 16px;
-  }
 `;
 
 const Header = styled.div`
@@ -168,24 +160,28 @@ const Header = styled.div`
 `;
 
 const IntroText = styled.p`
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   margin: 12px 0 16px;
   color: #333;
   line-height: 1.6;
   white-space: pre-wrap;
+  word-break: break-word;
 `;
 
 const TwoColumn = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Profile 왼쪽 / Contact 오른쪽 */
-  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(16px, 4vw, 24px);
+  min-width: 0;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr; /* 모바일에서는 세로 배치 */
+    grid-template-columns: 1fr;
   }
 `;
 
-const Column = styled.div``;
+const Column = styled.div`
+  min-width: 0;
+`;
 
 const GroupTitle = styled(GreenText).attrs({ size: "sm" })`
   display: block;
@@ -207,12 +203,14 @@ const InfoGrid = styled.div`
 
 const Key = styled.div`
   color: #666;
-  font-size: 0.95rem;
+  font-size: clamp(13px, 2vw, 15px);
   line-height: 1.6;
+  word-break: keep-all;
 `;
 
 const Val = styled.div`
   color: #111;
+  font-size: clamp(14px, 2vw, 16px);
   line-height: 1.6;
   word-break: break-word;
 `;
@@ -221,6 +219,9 @@ const A = styled.a`
   color: #111;
   text-decoration: none;
   border-bottom: 1px dashed rgba(22, 191, 0, 0.35);
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  padding: 2px 0;
   &:hover {
     color: #16bf00;
     border-bottom-color: rgba(22, 191, 0, 0.6);
