@@ -5,8 +5,7 @@ import { GreenText } from "./text/TextComponent";
 const sections = [
   { id: "images", label: "Images" },
   { id: "youtube", label: "Video" },
-  { id: "media", label: "Media" },
-  { id: "theater", label: "Theater / Mime" },
+  { id: "history", label: "History" },
 ];
 
 export default function SeoraeHeaderNav() {
