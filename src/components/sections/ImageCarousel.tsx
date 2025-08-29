@@ -31,7 +31,7 @@ export default function ImageCarousel({
           {items.map((item, i) => (
             <Slide key={i}>
               <Img src={item.src} alt={item.label || `image-${i}`} />
-              {item.label && <Caption>{item.label}</Caption>}
+              {/* {item.label && <Caption>{item.label}</Caption>} */}
             </Slide>
           ))}
         </SlideWrapper>
@@ -83,16 +83,16 @@ const Img = styled.img`
   border-radius: 12px;
 `;
 
-const Caption = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 8px 12px;
-  font-size: 14px;
-  color: #c4c4c4;
-  border-radius: 0 0 12px 12px;
-`;
+// const Caption = styled.div`
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   padding: 8px 12px;
+//   font-size: 14px;
+//   color: #c4c4c4;
+//   border-radius: 0 0 12px 12px;
+// `;
 
 const Controls = styled.div`
   display: flex;
